@@ -3,18 +3,19 @@
 
 #include "vmfunction.h"
 
+const char* message = "aguments are";
+
 int 
 main(int argc, char** argv)
 {
     if (argc < 2)
     {
-        printf("aguments are");
+        printf(message);
         for (int i=0; i<argc; ++i)
         {
-            printf("arg #%i is \"%s\"\n", i, atoi(argc[i]);
+            printf("arg #%i is \"%s\"\n", i, argc[i];
         }
         return 0;
     }
-    
-    return GetRevenue(atoi(argv[1]), atoi(argv[2]));
+    return getRevenue(atoi(argv[1]), atoi(argv[2]));
 }
