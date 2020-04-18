@@ -8,7 +8,7 @@ const char* message = "arguments are";
 int 
 main(int argc, char** argv)
 {
-    if (argc < 3)
+    if (argc < 2 || argc > 3)
     {
         printf(message);
         for (int i=0; i<argc; ++i)
