@@ -1,0 +1,3 @@
+This is C line in a C file
+
+gotcha b 
