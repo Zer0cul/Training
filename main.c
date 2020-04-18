@@ -10,10 +10,10 @@ main(int argc, char** argv)
 {
     if (argc < 2)
     {
-        printf(message);
+        printf("%s\n", message);
         for (int i=0; i<argc; ++i)
         {
-            printf("arg #%i is \"%s\"\n", i, argc[i];
+            printf("arg #%i is \"%s\"\n", i, argv[i]);
         }
         return 0;
     }
