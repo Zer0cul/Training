@@ -3,7 +3,7 @@
 
 #include "vmfunction.h"
 
-const char* message = "aguments are";
+const char* message = "arguments are";
 
 int 
 main(int argc, char** argv)
