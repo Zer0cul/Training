@@ -52,7 +52,7 @@ model {
 		}
 		revenue(NativeExecutableSpec) {
 			sources {
-//				c.lib library: "accountant" //, linkage: 'static'
+//				c.lib library: "accountant" ,// linkage: 'static'
 				c {
 					source {
 						srcDir "src"
@@ -63,8 +63,18 @@ model {
 			/* Static linkage. */
 			binaries.all {
 				lib library: 'accountant'  , linkage: 'static'
+                
+			}			
+		}
+		rsimple(NativeExecutableSpec) {
+			sources {
+				c {
+					source {
+						srcDir "src"
+						include "main.c","vmfunction.c"
+					}
+				}
 			}
-			
 		}
 	}
 }
